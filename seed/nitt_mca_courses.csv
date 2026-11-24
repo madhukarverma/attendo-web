@@ -1,0 +1,60 @@
+code,name,short_name,type,semester,lecture_hours,credits,elective_group
+CA711,Problem Solving and Programming,Python,theory,1,40,3,
+CA713,Mathematical Foundations of Computer Applications,Maths,theory,1,40,4,
+CA715,Digital Logic and Computer Organization,DLCO,theory,1,40,3,
+CA717,Data Structures and Applications,DSA,theory,1,40,3,
+CA719,Operating Systems,OS,theory,1,40,4,
+CA701,Problem Solving Lab using Python,Python Lab,lab,1,,2,
+CA703,Data Structures Lab using C,DS Lab,lab,1,,2,
+CA710,Design and Analysis of Algorithms,DAA,theory,2,40,4,
+CA712,Database Management Systems,DBMS,theory,2,40,3,
+CA714,Probability and Statistical Methods,Stats,theory,2,40,4,
+CA716,Object-oriented Programming,OOP,theory,2,40,4,
+CA718,Computer Networks,CN,theory,2,40,3,
+CA702,DBMS Lab,DBMS Lab,lab,2,,2,
+CA704,Computer Networks Lab,CN Lab,lab,2,,2,
+CA721,Machine Learning Techniques,ML,theory,3,40,3,
+CA723,Computational Intelligence,CI,theory,3,40,3,
+CA725,Software Engineering,SE,theory,3,,4,
+CA727,Accounting and Financial Management,AFM,theory,3,,3,
+CA705,Machine Learning Lab,ML Lab,lab,3,,2,
+CA707,Business Communication,Biz Comm,lab,3,,2,
+CA709,Computational Intelligence Lab,CI Lab,lab,3,,2,
+CA720,Deep Learning and Its Applications,DL,theory,4,40,3,
+CA722,Web Technology and Its Applications,Web Tech,theory,4,60,4,
+CA724,Distributed and Cloud Computing,Cloud,theory,4,40,3,
+CA706,Deep Learning Lab,DL Lab,lab,4,,2,
+CA708,Distributed and Cloud Computing Lab,Cloud Lab,lab,4,,2,
+CA731,Cyber Security,Cyber Sec,theory,5,40,3,
+CA733,Mobile Applications Development,MAD,theory,5,40,3,
+CA735,Organizational Behavior,OB,theory,5,40,3,
+CA70A,Cyber Security Lab,Cyber Lab,lab,5,,2,
+CA70B,Mobile Applications Development Lab,MAD Lab,lab,5,,2,
+CA749,Project Work Phase I,Project I,other,5,,2,
+CA750,Project Work Phase II,Project II,other,6,,12,
+CA7A1,Data Science,Data Sci,elective,,45,3,A
+CA7A2,Social Network Analysis,SNA,elective,,45,3,A
+CA7A3,Advanced Database Technology,ADT,elective,,45,3,A
+CA7A4,Data Mining and Warehousing,DMW,elective,,45,3,A
+CA7A5,Resource Management Techniques,RMT,elective,,45,3,A
+CA7A6,Image Processing,Image Proc,elective,,45,3,A
+CA7B1,Software Architecture and Project Management,SAPM,elective,,45,3,B
+CA7B2,Service Oriented Architecture,SOA,elective,,45,3,B
+CA7B3,Agile Technology,Agile,elective,,45,3,B
+CA7B4,Marketing Management,Marketing,elective,,45,3,B
+CA7C1,Bioinformatics,Bioinfo,elective,,45,3,C
+CA7C2,Evolutionary Computing,Evo Comp,elective,,45,3,C
+CA7C3,Modelling and Computer Simulation,Simulation,elective,,45,3,C
+CA7C4,Natural Language Processing,NLP,elective,,45,3,C
+CA7C5,DevOps,DevOps,elective,,45,4,C
+CA7C6,Mobile Computing,Mob Comp,elective,,45,4,C
+CA7C7,Block Chain Technology,Blockchain,elective,,45,3,C
+CA7C8,Business Ethics,Ethics,elective,,45,3,C
+CA7D1,Big Data Management,Big Data,elective,,45,4,D
+CA7D2,Green Computing,Green Comp,elective,,45,3,D
+CA7D3,Internet of Things,IoT,elective,,45,4,D
+CA7D4,Human Computer Interaction,HCI,elective,,45,3,D
+CA7D5,Multi-core Programming,Multicore,elective,,45,3,D
+CA7D6,MEAN Stack Development,MEAN,elective,,45,3,D
+CA7D7,Computer Vision,CV,elective,,45,3,D
+CA7D8,Business Intelligence,BI,elective,,45,3,D

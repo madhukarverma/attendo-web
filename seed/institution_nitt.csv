@@ -1,0 +1,2 @@
+slug,name,short_name,city,state,country,timezone,weekend_days,min_attendance_percent,grading_mode,programme_code,programme_name,programme_semesters,batch_label
+nitt,National Institute of Technology Tiruchirappalli,NIT Trichy,Tiruchirappalli,Tamil Nadu,IN,Asia/Kolkata,"6,7",75,relative,MCA,Master of Computer Applications,6,MCA 2026-29

@@ -1,0 +1,8 @@
+letter,grade_points,passing
+S,10,true
+A,9,true
+B,8,true
+C,7,true
+D,6,true
+E,5,true
+F,0,false

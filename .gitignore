@@ -1,0 +1,36 @@
+# Secrets: never commit
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.age
+
+# Dependencies and builds
+node_modules/
+.pnpm-store/
+.next/
+out/
+dist/
+build/
+.turbo/
+.vercel/
+coverage/
+storybook-static/
+playwright-report/
+test-results/
+
+# Supabase local
+supabase/.branches/
+supabase/.temp/
+
+# Claude local settings (personal, not shared)
+.claude/settings.local.json
+
+# OS and editors
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json
+*.log

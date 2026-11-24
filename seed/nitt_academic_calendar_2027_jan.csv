@@ -1,0 +1,43 @@
+date,end_date,kind,title,semesters
+2027-01-04,,CLASSES_START,Institute reopens for January 2027 session,
+2027-01-05,,DEADLINE,Late course registration / deregistration in MIS (with fine) starts,
+2027-01-07,2027-01-08,EVENT,Revaluation for July 2026 session courses,
+2027-01-11,,EVENT,1st class committee meeting; course plan upload in portal,
+2027-01-12,2027-01-13,DEADLINE,Registration for supplementary examinations,
+2027-01-14,,HOLIDAY,Pongal,
+2027-01-18,,DEADLINE,Late course registration / deregistration in MIS (with fine) ends,
+2027-01-22,2027-01-29,EVENT,Supplementary examinations (registered students only),
+2027-01-26,,HOLIDAY,Republic Day,
+2027-02-05,,DEADLINE,Late course registration / deregistration for online courses ends,
+2027-02-10,2027-02-12,EVENT,Project Phase II review I,6
+2027-02-15,2027-02-17,EXAM,1st Assessment,
+2027-02-19,2027-02-21,HOLIDAY,Pragyan,
+2027-02-26,,EVENT,2nd class committee meeting,
+2027-03-10,,HOLIDAY,Id-ul-Fitr,
+2027-03-12,2027-03-14,HOLIDAY,NITTFEST,
+2027-03-16,2027-03-18,EVENT,Project Phase II review II,6
+2027-03-22,,HOLIDAY,Holi,
+2027-03-26,,HOLIDAY,Good Friday,
+2027-03-31,2027-04-02,EXAM,2nd Assessment,
+2027-04-12,,EVENT,3rd class committee meeting,
+2027-04-14,2027-04-16,EXAM,Compensation Assessment,
+2027-04-19,,HOLIDAY,Mahavir Jayanti,
+2027-04-21,,CLASSES_END,Closure of all class work and final attendance submission in MIS,
+2027-04-22,,DEADLINE,Compilation of attendance & display of prevention list,
+2027-04-22,2027-04-23,DEADLINE,Student feedback submission and hall ticket download,
+2027-04-23,2027-04-29,EXAM,Final assessment for laboratory courses,
+2027-04-30,2027-05-14,EXAM,Final assessment for theory courses,
+2027-05-03,2027-05-05,EVENT,Project Phase II review III,6
+2027-05-17,,HOLIDAY,Id-ul-Zuha (Bakrid),
+2027-05-19,,EVENT,PAC meeting,
+2027-05-20,,HOLIDAY,Buddha Purnima,
+2027-05-21,,DEADLINE,Last date for submission of control sheet,
+2027-05-31,,DEADLINE,"Project Phase II thesis submission, last date",6
+2027-06-07,,DEADLINE,Course uploading in MIS begins (July 2027 session),
+2027-06-08,2027-06-10,EXAM,Project Phase II viva voce,6
+2027-06-11,,DEADLINE,Last date for PAC meeting for Project Phase II,6
+2027-06-14,,DEADLINE,Course uploading in MIS ends (July 2027 session),
+2027-06-15,,DEADLINE,Last date for submission of control sheet (Semesters IV and VI),"4,6"
+2027-06-16,,HOLIDAY,Muharram,
+2027-06-21,,DEADLINE,Course registration / deregistration by students begins (July 2027 session),
+2027-07-07,,EVENT,Institute reopens for July 2027 session,
