@@ -11,7 +11,7 @@ Run locally on 27 Nov 2026 (Windows 11, Node 26.13.1, pnpm 10.34.9, gitleaks 8.3
   `subject-empty` ("found 2 problems"), and no commit was made.
 - A staged fake key is blocked by the `pre-commit` hook: a file holding a made-up GitHub token
   (`ghp_` plus 36 random characters) was staged and `git commit -m "chore(config): fake key test"`
-  failed with gitleaks rule `github-pat` ("leaks found: 1"). The file was then unstaged and
+  failed with gitleaks reporting "leaks found: 1". The file was then unstaged and
   deleted.
 - Gates: `pnpm format:check`, `pnpm lint` (zero warnings), `pnpm typecheck` (no TypeScript
   packages yet), `pnpm test` (11 preset tests pass: 4.5 boundaries, SEC-S-009, jsx-a11y on
