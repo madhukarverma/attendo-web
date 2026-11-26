@@ -15,8 +15,18 @@ reminders. Built stage by stage from the spec. Nothing is built yet: Stage 0 set
 | `docs/ACCOUNTS_SETUP.md` | The Owner's checklist for the free accounts, local tools and where each key goes | The Owner asks about accounts, env vars or local setup |
 | `docs/stages/STATUS.md` | Created in Stage 0: which stage is done, in progress, next | Start of every session |
 
-Stage 0 adds `apps/`, `packages/`, `supabase/` and more (spec 4.2). Update this map in the same
-change that adds, moves or renames a folder or key file.
+Stage 0 adds `apps/`, `packages/`, `supabase/` and more (spec 4.2).
+
+## Finding things (keep context small)
+
+- Read the map first and open only the file the task needs.
+- Never scan a whole folder when the map says where to look.
+- Never read `docs/ATTENDO_WEB_SPEC.md` whole (about 41k tokens). List its headings with
+  `grep -n '^#' docs/ATTENDO_WEB_SPEC.md`, then read only the sections the task needs.
+- Never read `seed/nitt_mca_curriculum.csv` whole (about 37k tokens). Search it by course code.
+- A folder with many files or its own rules gets a short `CLAUDE.md` of its own: what each file
+  is, and which one to open for which kind of question.
+- When a folder or key file is added, moved or renamed, update the map in the same change.
 
 ## Rules (full list: spec section 0)
 
