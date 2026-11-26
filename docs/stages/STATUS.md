@@ -26,8 +26,8 @@ Last updated: 27 Nov 2026
 
 The plan is in [stage-00-plan.md](stage-00-plan.md). There's one PR per task group.
 
-- [ ] TG1 `docs/stage0-plan`: save the plan and status
-- [ ] TG2 `chore/stage0-monorepo`: monorepo, toolchain, first CI
+- [x] TG1 `docs/stage0-plan`: save the plan and status
+- [x] TG2 `chore/stage0-monorepo`: monorepo, toolchain, first CI
 - [ ] TG3 `chore/stage0-claude-hooks`: hooks, permissions, quiet output, map check
 - [ ] TG4 `chore/stage0-claude-agents`: rules, reviewer, skills
 - [ ] TG5 `docs/stage0-adrs`: ADRs 0001 to 0023
@@ -48,11 +48,11 @@ The plan is in [stage-00-plan.md](stage-00-plan.md). There's one PR per task gro
 
 ## Next action
 
-Merge the TG1 pull request, then start TG2 (monorepo, toolchain, first CI).
+Start TG3 (Claude hooks, permissions, quiet output, map check). Waiting on the Owner: the
+go-ahead for interim branch protection on `main` (PRs only, linear history, `ci` required).
 
 ## Owner steps coming up
 
-- TG2: install gitleaks from a Start-menu PowerShell (`winget install -e --id Gitleaks.Gitleaks`).
 - TG9: put `SUPABASE_ACCESS_TOKEN` and `SUPABASE_DB_URL` in the GitHub `staging` environment, then
   run `supabase login` and `supabase link` once in your own terminal.
 - TG14: Vercel import and settings, environment variables, the protection bypass secret, Supabase
@@ -62,4 +62,6 @@ Merge the TG1 pull request, then start TG2 (monorepo, toolchain, first CI).
 
 ## Open issues
 
-- None yet.
+- The 4.5 boundaries rule is proven on relative imports only. When TG6 and TG7 add the first
+  packages, check that `@attendo/*` workspace imports are classified the same way (add fixtures
+  if not).

@@ -1,0 +1,6 @@
+# Generated
+pnpm-lock.yaml
+
+# Shipped unchanged (spec 6.9), and hand-wrapped prose where Prettier would re-pad every table.
+seed/
+*.md

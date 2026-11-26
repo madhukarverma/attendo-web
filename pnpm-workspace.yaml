@@ -1,0 +1,14 @@
+packages:
+  - apps/*
+  - packages/*
+
+# pnpm 10 blocks dependency install scripts unless listed here (SEC-S-029).
+# The Supabase CLI downloads its binary in a postinstall script (TG9).
+onlyBuiltDependencies:
+  - supabase
+
+# eslint-plugin-jsx-a11y 6.10.2 declares ESLint up to 9 but runs on 10: the preset test
+# (packages/config/test) proves its rules fire. Recorded in ADR-0021.
+peerDependencyRules:
+  allowedVersions:
+    eslint-plugin-jsx-a11y>eslint: '10'

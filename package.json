@@ -1,0 +1,36 @@
+{
+  "name": "attendo-web",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@10.34.9",
+  "engines": {
+    "node": ">=26 <27",
+    "pnpm": "10.34.9"
+  },
+  "scripts": {
+    "build": "turbo run build --output-logs=errors-only",
+    "lint": "turbo run lint --output-logs=errors-only && eslint . --max-warnings=0",
+    "typecheck": "turbo run typecheck --output-logs=errors-only",
+    "test": "turbo run test --output-logs=errors-only",
+    "format": "prettier --write . --log-level=warn",
+    "format:check": "prettier --check . --log-level=warn",
+    "knip": "knip",
+    "changeset": "changeset",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "@attendo/config": "workspace:*",
+    "@changesets/cli": "3.0.3",
+    "@commitlint/cli": "21.2.4",
+    "@commitlint/config-conventional": "21.2.4",
+    "@types/node": "26.6.11",
+    "eslint": "10.15.0",
+    "husky": "9.1.7",
+    "knip": "6.48.0",
+    "lint-staged": "17.6.2",
+    "prettier": "3.10.1",
+    "turbo": "2.11.13",
+    "typescript": "6.0.3"
+  },
+  "prettier": "@attendo/config/prettier"
+}

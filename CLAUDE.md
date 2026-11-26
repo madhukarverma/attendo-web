@@ -2,8 +2,8 @@
 
 A free web app (PWA) for NIT Trichy MCA 2026-29 students: attendance per subject (75% rule),
 timetable and calendar, class groups, tasks, focus timer, grades (SGPA/CGPA), friends, push
-reminders. Built stage by stage from the spec. Stage 0 (Foundations) is in progress: its plan is
-approved and no code exists yet.
+reminders. Built stage by stage from the spec. Stage 0 (Foundations) is in progress: the
+workspace, toolchain and first CI exist; no app code yet.
 
 ## Map: where things live
 
@@ -16,8 +16,13 @@ approved and no code exists yet.
 | `docs/ACCOUNTS_SETUP.md` | The Owner's checklist for the free accounts, local tools and where each key goes | The Owner asks about accounts, env vars or local setup |
 | `docs/stages/STATUS.md` | The handoff note: which stage and task group is done, in progress, next; Owner steps; open issues | Start and end of every session |
 | `docs/stages/stage-00-plan.md` | The approved Stage 0 plan: decisions D1 to D7, versions, task groups TG1 to TG19 | Working on any Stage 0 task group |
+| `docs/stages/stage-00-evidence.md` | Proof for each Stage 0 task group and exit gate | Recording or checking a gate |
+| `docs/adr/` | Architecture decision records; `0021-pinned-versions.md` lists every pinned version | Choosing or upgrading a dependency, any lasting decision |
+| `packages/config/` | Shared ESLint preset (4.5 boundaries, SEC-S-009, rule 0.4.11), Prettier and `tsconfig.base.json`; `test/` proves the lint rules | Lint or TypeScript settings, a boundary rule |
+| `.github/` | CI workflow (15.5 gates), PR template, CODEOWNERS | CI fails, adding a gate |
+| Root configs | `package.json` scripts, `pnpm-workspace.yaml`, `turbo.json`, `knip.json`, `commitlint.config.js` (scope list), `lint-staged.config.js`, `.husky/` (pre-commit gitleaks), `.changeset/` | Workspace, commit hooks, commit scopes |
 
-Stage 0 adds `apps/`, `packages/`, `supabase/` and more (spec 4.2).
+Stage 0 adds `apps/`, `supabase/` and the other packages next (spec 4.2).
 
 ## Finding things (keep context small)
 
