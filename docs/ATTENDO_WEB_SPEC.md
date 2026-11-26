@@ -245,7 +245,7 @@ to `0023-<slug>.md`) using the template in 20.4.
 | Bot protection | Cloudflare Turnstile | Free | Sign-up, password reset, feedback, group join |
 | Uptime | UptimeRobot | Free, 5-minute checks | Public status page |
 | Web analytics | Vercel Web Analytics | Free Hobby allowance | Cookie-free; no personal data |
-| Source control, CI | GitHub private repository, GitHub Actions | 2,000 Actions minutes a month (3,000 with GitHub Pro) | Branch protection on a private repository needs GitHub Pro, which is free with the GitHub Student Developer Pack (19.2). Keep CI lean (15.4) |
+| Source control, CI | GitHub public repository, GitHub Actions | Free plan: branch protection, and Actions minutes on standard runners without a monthly cap, for public repositories | Public by the Owner's choice (19.2), so the GitHub Student Developer Pack isn't needed. Secrets live only in the dashboards and Actions secrets, never in the repository. Keep CI lean anyway (15.4) |
 | Dependency updates | Dependabot | Free | Weekly, grouped |
 | Domain | Vercel's free subdomain (`<project>.vercel.app`) | Free | `SITE_URL` is configuration. The Owner's list flags a bare `vercel.app` address as an AI giveaway, so Stage 10 moves to a custom domain if the Owner has a free one (for example the first-year domain in the GitHub Student Developer Pack). It's a config change only |
 
@@ -2047,8 +2047,8 @@ automated gates, staged environments and traceable releases.
 ### 15.2 Branching and commits
 
 **Branching:** trunk-based.
-- `main` is always releasable and protected. On a private repository this needs GitHub Pro, which
-  is free with the Student Developer Pack (19.2):
+- `main` is always releasable and protected. GitHub's free plan allows this on a public
+  repository (19.2):
   - no direct pushes; changes land only through pull requests;
   - linear history;
   - required status checks (15.5).
@@ -2570,9 +2570,9 @@ The Owner may add later, in the same formats:
 
 ### 19.2 Accounts the Owner creates (free, no card), before Stage 0
 
-1. A GitHub account with a private repository `attendo-web`, plus the GitHub Student Developer
-   Pack (free for students). The pack gives GitHub Pro: branch protection on private repositories
-   and 3,000 Actions minutes a month.
+1. A GitHub account with a public repository `attendo-web`. On a public repository the free plan
+   gives branch protection and Actions minutes without a monthly cap. The GitHub Student
+   Developer Pack is optional: its free first-year domain can serve Stage 10.
 2. Vercel (Hobby), signed in with GitHub.
 3. Supabase: two projects, `attendo-staging` and `attendo-prod`, in region Mumbai.
 4. A Google Cloud project, used only to create the OAuth client for Google sign-in (an OAuth consent screen with app name "Attendo"; publishing status "In production" once the privacy and terms URLs exist).
