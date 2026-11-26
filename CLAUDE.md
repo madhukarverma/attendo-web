@@ -12,7 +12,7 @@ reminders. Built stage by stage from the spec. Nothing is built yet: Stage 0 set
 | `seed/` | NIT Trichy data: institution, terms, courses with credits, curriculum, two academic calendars, grading. Copied unchanged; see spec 6.9 | Seeding the database, anything about courses or dates |
 | `.claude/skills/apple-design/` | The Owner's motion and gesture skill (the "Apple" motion mode, spec 9.8) | Animations, gestures |
 | `.claude/skills/animation-performance/` | Keeping animations cheap | Anything that moves |
-| `docs/ACCOUNTS_SETUP.md` | The Owner's checklist for the free accounts and where each key goes | The Owner asks about accounts or env vars |
+| `docs/ACCOUNTS_SETUP.md` | The Owner's checklist for the free accounts, local tools and where each key goes | The Owner asks about accounts, env vars or local setup |
 | `docs/stages/STATUS.md` | Created in Stage 0: which stage is done, in progress, next | Start of every session |
 
 Stage 0 adds `apps/`, `packages/`, `supabase/` and more (spec 4.2). Update this map in the same
