@@ -2,7 +2,8 @@
 
 A free web app (PWA) for NIT Trichy MCA 2026-29 students: attendance per subject (75% rule),
 timetable and calendar, class groups, tasks, focus timer, grades (SGPA/CGPA), friends, push
-reminders. Built stage by stage from the spec. Nothing is built yet: Stage 0 sets up the code.
+reminders. Built stage by stage from the spec. Stage 0 (Foundations) is in progress: its plan is
+approved and no code exists yet.
 
 ## Map: where things live
 
@@ -13,7 +14,8 @@ reminders. Built stage by stage from the spec. Nothing is built yet: Stage 0 set
 | `.claude/skills/apple-design/` | The Owner's motion and gesture skill (the "Apple" motion mode, spec 9.8) | Animations, gestures |
 | `.claude/skills/animation-performance/` | Keeping animations cheap | Anything that moves |
 | `docs/ACCOUNTS_SETUP.md` | The Owner's checklist for the free accounts, local tools and where each key goes | The Owner asks about accounts, env vars or local setup |
-| `docs/stages/STATUS.md` | Created in Stage 0: which stage is done, in progress, next | Start of every session |
+| `docs/stages/STATUS.md` | The handoff note: which stage and task group is done, in progress, next; Owner steps; open issues | Start and end of every session |
+| `docs/stages/stage-00-plan.md` | The approved Stage 0 plan: decisions D1 to D7, versions, task groups TG1 to TG19 | Working on any Stage 0 task group |
 
 Stage 0 adds `apps/`, `packages/`, `supabase/` and more (spec 4.2).
 
@@ -41,6 +43,6 @@ Stage 0 adds `apps/`, `packages/`, `supabase/` and more (spec 4.2).
 
 ## Start of every session
 
-1. Read this file, then `docs/stages/STATUS.md` (once it exists).
+1. Read this file, then `docs/stages/STATUS.md`.
 2. Read the spec sections the current stage lists.
 3. Say which stage you're on and what's next before doing anything.

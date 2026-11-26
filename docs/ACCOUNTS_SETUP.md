@@ -11,6 +11,7 @@ Tick each box as you go.
 - [x] GitHub account, signed in on this computer (`gh` is logged in).
 - [x] Repository `attendo-web`, created during setup.
 - [x] **Make the repository public** (repository Settings › General › Danger Zone › Change visibility, or ask Claude to do it). On a public repository GitHub's free plan gives branch protection and unlimited Actions minutes, so the GitHub Student Developer Pack isn't needed. Secrets never go in the repository: they live only in the dashboards.
+- [ ] Stage 0 (TG16), with Claude: a private repository `attendo-backups` that runs the weekly backup, so the encrypted dumps aren't downloadable from the public repository (Stage 0 plan, decision D3).
 - Optional, any time later: the Student Developer Pack (education.github.com/pack) includes a free domain for a year, which Stage 10 can use instead of the `vercel.app` address.
 
 ## 2. Supabase (database, sign-in, storage)
@@ -29,7 +30,7 @@ Tick each box as you go.
 ## 3. Vercel (hosting)
 
 - [x] Sign up at vercel.com with GitHub (Hobby plan).
-- [ ] Don't import the repository yet. Claude sets up the project in Stage 0 and tells you which settings to choose: production branch `production`, function region Mumbai (`bom1`), preview protection on.
+- [ ] Don't import the repository yet. In Stage 0 (TG14) you import it in the Vercel dashboard, and Claude tells you which settings to choose: root directory `apps/web`, Node 26.x, production branch `production`, preview protection on. The function region, Mumbai (`bom1`), is set in the code (`apps/web/vercel.json`), so there's no Vercel CLI.
 
 ## 4. Google sign-in (Google Cloud)
 
@@ -99,9 +100,12 @@ can't see. Lines marked (admin) need "Run as administrator".
 - [x] Node.js 26 LTS (Vercel's default, spec 3.1). First remove Node 23.11, which is past end of life and sits at `E:\`, earlier on PATH than a new install: `winget uninstall -e --id OpenJS.NodeJS.23`. Then `winget install -e --id OpenJS.NodeJS.LTS`. Check with `node --version` in a new window: it should say v26.
 - [x] pnpm 10: `npm install -g pnpm@10.34.9` in a new window. Node 26 no longer ships Corepack, so pnpm is installed with npm; the repository pins the exact version in `packageManager`.
 - [x] age, for the backup key (section 10): `winget install -e --id FiloSottile.age`.
+- [ ] Stage 0 (TG2): gitleaks, which checks every commit for secrets before it's made: `winget install -e --id Gitleaks.Gitleaks`.
+- [ ] Stage 0 (TG19): the TypeScript language server, for Claude's code intelligence: `npm install -g typescript-language-server typescript`.
 
-The Supabase CLI and the Vercel CLI come with the project in Stage 0, so they need no global
-install. Gitleaks, Semgrep and OSV-Scanner run in CI only.
+The Supabase CLI comes with the project in Stage 0, so it needs no global install. There's no
+Vercel CLI: the project is set up in the Vercel dashboard. Semgrep and OSV-Scanner run in CI only;
+gitleaks runs both in CI and before each commit.
 
 ## Where each secret goes (summary)
 
@@ -110,7 +114,9 @@ install. Gitleaks, Semgrep and OSV-Scanner run in CI only.
 | `NEXT_PUBLIC_*` (Supabase URL and anon key, Turnstile site key, Sentry DSN, VAPID public key, site URL) | Vercel environment variables |
 | `SUPABASE_SERVICE_ROLE_KEY`, `CRON_SECRET`, `VAPID_PRIVATE_KEY`, `UPSTASH_*`, `TURNSTILE_SECRET_KEY`, `ICAL_TOKEN_PEPPER`, `SMTP_*`, `OWNER_ALERT_EMAIL` | Vercel environment variables (never in code) |
 | Google client ID and secret, Gmail SMTP | Supabase Auth settings |
-| `SUPABASE_DB_URL`, `SUPABASE_ACCESS_TOKEN`, `SENTRY_AUTH_TOKEN`, `BACKUP_AGE_PUBLIC_KEY`, `VERCEL_AUTOMATION_BYPASS_SECRET` | GitHub › repository Settings › Secrets and variables › Actions |
+| `SUPABASE_DB_URL`, `SUPABASE_ACCESS_TOKEN` | GitHub › repository Settings › Environments: `staging` and `production` each get their own values |
+| `SENTRY_AUTH_TOKEN`, `BACKUP_AGE_PUBLIC_KEY`, `VERCEL_AUTOMATION_BYPASS_SECRET` | GitHub › repository Settings › Secrets and variables › Actions |
+| Production `SUPABASE_DB_URL` (backups), `BACKUP_AGE_PUBLIC_KEY` | Also in the private `attendo-backups` repository's Actions settings |
 
 When every box is ticked except the ones marked "Stage 0" or "Stage 1" (including sections 11 and
 12), tell Claude "accounts ready" and start Stage 0.
