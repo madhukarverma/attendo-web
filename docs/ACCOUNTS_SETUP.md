@@ -100,7 +100,7 @@ can't see. Lines marked (admin) need "Run as administrator".
 - [x] Node.js 26 LTS (Vercel's default, spec 3.1). First remove Node 23.11, which is past end of life and sits at `E:\`, earlier on PATH than a new install: `winget uninstall -e --id OpenJS.NodeJS.23`. Then `winget install -e --id OpenJS.NodeJS.LTS`. Check with `node --version` in a new window: it should say v26.
 - [x] pnpm 10: `npm install -g pnpm@10.34.9` in a new window. Node 26 no longer ships Corepack, so pnpm is installed with npm; the repository pins the exact version in `packageManager`.
 - [x] age, for the backup key (section 10): `winget install -e --id FiloSottile.age`.
-- [ ] Stage 0 (TG2): gitleaks, which checks every commit for secrets before it's made: `winget install -e --id Gitleaks.Gitleaks`.
+- [x] Stage 0 (TG2): gitleaks, which checks every commit for secrets before it's made: `winget install -e --id Gitleaks.Gitleaks`.
 - [ ] Stage 0 (TG19): the TypeScript language server, for Claude's code intelligence: `npm install -g typescript-language-server typescript`.
 
 The Supabase CLI comes with the project in Stage 0, so it needs no global install. There's no

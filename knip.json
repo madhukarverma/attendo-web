@@ -1,0 +1,10 @@
+{
+  "$schema": "https://unpkg.com/knip@6/schema.json",
+  "workspaces": {
+    ".": {},
+    "packages/config": {
+      "entry": ["test/*.test.js"],
+      "ignore": ["test/fixtures/**"]
+    }
+  }
+}
